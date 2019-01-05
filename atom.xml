@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-05T02:06:49.199Z</updated>
+  <updated>2019-01-02T10:58:00.322Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,35 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>结合hexo在github上搭建个人博客--全过程</title>
-    <link href="http://yoursite.com/2019/01/05/%E7%BB%93%E5%90%88hexo%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-%E5%85%A8%E8%BF%87%E7%A8%8B/"/>
-    <id>http://yoursite.com/2019/01/05/结合hexo在github上搭建个人博客-全过程/</id>
-    <published>2019-01-05T01:08:50.000Z</published>
-    <updated>2019-01-05T02:06:49.199Z</updated>
-    
-    <content type="html"><![CDATA[<p>想搭建一个这样的博客，需要哪些步骤呢？</p><ol><li><strong>首先，得在GitHub上有个自己的仓库。</strong></li></ol><p>　　莫嫌我啰嗦，先简单说一下，GitHub是一个什么样的网站。说到GitHub得先说一下git，git是Linux的作者Linus和他的一群以代码会友的小伙伴在创作Linux期间，为了更方便的进行创作而编写的一个分布式（不需要中央服务器，可离线进行）版本控制系统，这其中的故事挺有趣的，有兴趣的小伙伴可以去谷歌一下（大牛们的idea和实现真的都是秒秒钟的事，我什么时候才能有他们十分之一的功力）。git呢，可以帮我们管理记录程序开发过程中的每个版本，打个比方，写毕业论文，昨天写了一段，今天进行了一些修改，只要进行提交，每次修改过后的版本，它都会帮我们保管，并且当我们发现我刚刚的修改不合适，我想回到昨晚提交时的样子时，发现做了好多细节的修改，记不清了，这个时候，git可以帮你秒秒钟回溯到昨晚的那个版本！可穿越到过去，也可以从过去穿越到现在。就是这么神奇！棒呆了有木有</p><p>　　GitHub 是基于 Git 的一个代码托管网站。开发者可以将代码在 GitHub 上开源，可以浏览其它项目的代码，fork 到自己名下做修改，clone 回本地（没有访问权限的 private repo 除外）使用，也可以发起 pull request 向上游提交自己的修改。</p><p>　　来到<a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>官网，注册自己的账号，填好用户名，密码，邮箱，并完成邮箱验证就可以啦！</p><p>　　<img src="https://images2017.cnblogs.com/blog/1228928/201712/1228928-20171210161907318-314940492.png" alt="img"></p><p>　　注册完之后，就可以在GitHub上新建一个仓库，这个仓库里可以存放你自己的代码和项目（GitHub免费帮你保存哟），可以和其他人分享，向我们这种小菜鸟可以去学习大牛们的项目，包括一些优秀的框架源码。（如果想要有自己的私人库，每月7刀的费用！）</p><p>　　<img src="https://images2017.cnblogs.com/blog/1228928/201712/1228928-20171210170615286-2134972246.jpg" alt="img"></p><p>　　<img src="https://images2017.cnblogs.com/blog/1228928/201712/1228928-20171210161928021-755664545.png" alt="img"></p><p> 　　<strong>注意</strong>，库的名字要和账户名一致！</p><p>　　<img src="https://images2017.cnblogs.com/blog/1228928/201712/1228928-20171210161629958-1211226827.png" alt="img"></p><p>　　默认的域名是http;//username.github.io/,如果想要一个特别的域名，可以买一个域名，并在setting里面绑定就可以了。</p><p>　　以上完成了第一步，我们有自己的代码仓库了，接下来我们要配置本机环境了！</p><p><strong>2. 环境搭建</strong></p><p>　　<strong>2.1 首先，我们需要下载node.js和git.安装基本上就是默认安装即可。</strong></p><p>　　安装，完成之后，打开命令窗口（Win+R，输入CMD，回车），分别输入node -v,  npm -v, git -version,  如果都能像下图一样返回版本号就说明安装好了。</p><p>　　<img src="https://images2017.cnblogs.com/blog/1228928/201712/1228928-20171210164556943-1814058239.png" alt="img"></p><p>　　如果在这里不可以操作git，说明在安装时没有更改路径，设置为windows环境下也可以操作，不过没有关系，只需要将git的安装路径添加到环境变量中就可以在windows下操作，或者我们可以运行git bash，在这里查看git的版本号（安装git之后一定会生成git bash），</p><p>　　<img src="https://images2017.cnblogs.com/blog/1228928/201712/1228928-20171210165330443-675669731.png" alt="img"></p><p>　　注意，在git bash中应该输入 git version。（环境号版本号不同没有关系）</p><p> 　　<strong>2.2 SSH授权</strong></p><p>　　打开git bash，输入ssh-keygen -t rsa, 接着回车三下</p><p>　　<img src="https://images2017.cnblogs.com/blog/1228928/201712/1228928-20171210170029599-1633314112.png" alt="img"></p><p>　　这样就会在C盘用户目录下生成id_rsa和id_rsa.pub这两个文件，前者是密钥，后者是公钥，用记事本打开id_rsa.pub，复制其中的全部内容，添加到GitHub上，这样本地的id_rsa密钥就可以和GitHub上的id_rsa.pub公钥进行配对，授权成功。</p><p>　　<img src="https://images2017.cnblogs.com/blog/1228928/201712/1228928-20171210171603958-1209919722.jpg" alt="img"></p><p> 　　SSH key添加之后，就可以在本机git bash中进行测试，输入ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>进行测试，</p><p>　　<img src="https://images2017.cnblogs.com/blog/1228928/201712/1228928-20171210171822615-599279373.png" alt="img"></p><p>　　返回Hi username ！You’ve successfully ……说明你已经成功啦！</p><p>　　（如果碰到什么问题，可以给我留言哟！嘻嘻）</p><p><strong>3. 设置本地博客的配置</strong></p><p>　　<strong>3.1 安装hexo</strong></p><p>　　在任意一个地方新建一个文件夹，在git bash中进入这个文件夹，比如<strong>cd /d/Files/hexo/</strong>（之后安装的内容会保存在这个文件夹内），输入npm install -g hexo安装hexo即可，如下图（我已经安装过了，就不再安装了）</p><p>　　<img src="https://images2017.cnblogs.com/blog/1228928/201712/1228928-20171210182333536-1195927792.png" alt="img"></p><p>　　注意，在回车之后，可能会出现一行WARN的警告语句，不用管它，什么都不要按，等着。。。过一段时间如果出现hexo版本号之类的语句就代表差不多了。</p><p>　　然后输入<strong>npm install hexo –save</strong>这个时候你会看到命令行出现了一堆白字，紧接着输入<strong>hexo v</strong>查看是否安装成功</p><p>　　<img src="https://images2017.cnblogs.com/blog/1228928/201712/1228928-20171210183151240-99873930.png" alt="img"></p><p>　　喏，安装好了。。。。</p><p>　　别着急，就快成功了，再坚持一小小下，嘿嘿。</p><p>　　<strong>3.2 初始化hexo</strong></p><p>　　继续输入<strong>hexo init</strong>实现初始化，</p><p>　　</p><p>　　<img src="https://images2017.cnblogs.com/blog/1228928/201712/1228928-20171210183456005-32633990.png" alt="img"></p><p>　　下载好了，再输入<strong>hexo s</strong></p><p>　　<img src="https://images2017.cnblogs.com/blog/1228928/201712/1228928-20171210183535708-1122679544.png" alt="img"></p><p>　　这时候我们就可以打开浏览器了，在地址栏中输入<a href="http://localhost:400/，我们就可以看到如下图的界面，，我们的博客建成功啦！！！开不开心？高不高兴？是不是很有成就感？" target="_blank" rel="noopener">http://localhost:400/，我们就可以看到如下图的界面，，我们的博客建成功啦！！！开不开心？高不高兴？是不是很有成就感？</a></p><p>  　　<img src="https://images2017.cnblogs.com/blog/1228928/201712/1228928-20171210184948630-1789119677.png" alt="img"></p><p>　　我们可以去看一下我们的源码的位置，就在之前新建的那个文件夹里，在source-&gt;_posts文件夹下，有一篇helloworld的初始化文章，如果想要添加新的文章，可以在命令行输入hexo new ‘filename’,就会生成一个新的.md文件，对它编辑就可以了。</p><p>　　![img](<a href="https://images2017.cnblogs.com/blog/1228928/201712/1228928-20171210191722568-2050920108.jpg" target="_blank" rel="noopener">https://images2017.cnblogs.com/blog/1228928/201712/1228928-20171210191722568-2050920108.jpg</a></p><p>　　<strong>3.3 上传项目</strong></p><p>　　先打开配置文档_config.yml，对它做如下修改，repository后面的内容是 <a href="mailto:**git@gitbub.com" target="_blank" rel="noopener">**git@gitbub.com</a>:username/库地址** 的形式</p><p>　　注意：type、repository、branch冒号的后面都有一个空格</p><p> 　　　<img src="https://images2017.cnblogs.com/blog/1228928/201712/1228928-20171210192358427-1680463018.png" alt="img"></p><p>　　部署好之后，我们就可以上传我们的代码咯</p><p>　　回到命令行窗口，输入<strong>npm install hexo-deployer-git –save,</strong></p><p>　　再输入<strong>hexo g，</strong>然后再<strong>hexo d</strong>，就可以将我们public里面的代码上传咯，在GitHub上可以看到我们上传的代码。这样别人也可以通过域名访问我们博客了。在地址栏输入http://域名就可以访问。</p><p>　　</p><p>　　</p><p>　　ps: 如果觉得对你有帮助的话，麻烦给个赞赞哟！谢谢！</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;想搭建一个这样的博客，需要哪些步骤呢？&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;首先，得在GitHub上有个自己的仓库。&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;　　莫嫌我啰嗦，先简单说一下，GitHub是一个什么样的网站。说到GitHub得先说一下git，git是
-      
-    
-    </summary>
-    
-      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
-    
-    
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
-  </entry>
   
   <entry>
     <title>【持续更新】hexo next主题优化手册</title>
