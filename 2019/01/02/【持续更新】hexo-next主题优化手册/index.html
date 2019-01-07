@@ -87,7 +87,7 @@
 <meta property="og:image" content="https://i.imgur.com/4O4llpT.png">
 <meta property="og:image" content="https://i.imgur.com/sIHtbOe.png">
 <meta property="og:image" content="https://i.imgur.com/Z0BCMhF.png">
-<meta property="og:updated_time" content="2019-01-02T10:58:00.322Z">
+<meta property="og:updated_time" content="2019-01-07T00:50:27.087Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【持续更新】hexo next主题优化手册">
 <meta name="twitter:image" content="https://i.imgur.com/4O4llpT.png">
@@ -449,33 +449,11 @@ scheme: Gemini
       enable: true
       scriptFrom: local
       model:
-        scale: 1
-        hHeadPos: 0.5
-        vHeadPos: 0.618
-      display:
-        superSample: 2
-        width: 150
-        height: 300
-        position: right
-        hOffset: 0
-        vOffset: -20
-     mobile:
-        show: false
-      react:
-        opacityDefault: 0.5
-        opacityOnHover: 0.
-</code></pre><h2 id="实现文章首页”分类于”、”阅读次数”等效果"><a href="#实现文章首页”分类于”、”阅读次数”等效果" class="headerlink" title="实现文章首页”分类于”、”阅读次数”等效果"></a>实现文章首页”分类于”、”阅读次数”等效果</h2><p>效果图如下:<br><img src="https://i.imgur.com/sIHtbOe.png" alt="">     </p>
-<h3 id="在根目录下打开命令行-1"><a href="#在根目录下打开命令行-1" class="headerlink" title="在根目录下打开命令行"></a>在根目录下打开命令行</h3><p>依次输入以下命令:    </p>
-<pre><code>npm install hexo-wordcount --save
-npm uninstall hexo-generator-index --save
-npm install hexo-generator-index-pin-top --save   
-</code></pre><h3 id="打开主题配置文件"><a href="#打开主题配置文件" class="headerlink" title="打开主题配置文件"></a>打开主题配置文件</h3><p>打开相关开关:   </p>
-<pre><code>post_wordcount:
-    item_text: true
-    wordcount: true
-    min2read: true
-    totalcount: true
-</code></pre><h3 id="打开…-themes-next-layout-macro-post-swig文件"><a href="#打开…-themes-next-layout-macro-post-swig文件" class="headerlink" title="打开…/themes/next/layout/_macro/post.swig文件"></a>打开…/themes/next/layout/_macro/post.swig文件</h3><p>把里面的代码用下面的代码替换:<br><a href="https://pan.baidu.com/s/1W_mDJXS3gDs_iq1aQEZaaA" target="_blank" rel="noopener">点击下载</a>    </p>
+</code></pre><p>​            scale: 1<br>​            hHeadPos: 0.5<br>​            vHeadPos: 0.618<br>          display:<br>​            superSample: 2<br>​            width: 150<br>​            height: 300<br>​            position: right<br>​            hOffset: 0<br>​            vOffset: -20<br>         mobile:<br>​            show: false<br>          react:<br>​            opacityDefault: 0.5<br>​            opacityOnHover: 0.</p>
+<h2 id="实现文章首页”分类于”、”阅读次数”等效果"><a href="#实现文章首页”分类于”、”阅读次数”等效果" class="headerlink" title="实现文章首页”分类于”、”阅读次数”等效果"></a>实现文章首页”分类于”、”阅读次数”等效果</h2><p>效果图如下:<br><img src="https://i.imgur.com/sIHtbOe.png" alt="">     </p>
+<h3 id="在根目录下打开命令行-1"><a href="#在根目录下打开命令行-1" class="headerlink" title="在根目录下打开命令行"></a>在根目录下打开命令行</h3><p>依次输入以下命令:<br>​<br>    npm install hexo-wordcount –save<br>    npm uninstall hexo-generator-index –save<br>    npm install hexo-generator-index-pin-top –save   </p>
+<h3 id="打开主题配置文件"><a href="#打开主题配置文件" class="headerlink" title="打开主题配置文件"></a>打开主题配置文件</h3><p>打开相关开关:<br>​<br>    post_wordcount:<br>        item_text: true<br>        wordcount: true<br>        min2read: true<br>        totalcount: true</p>
+<h3 id="打开…-themes-next-layout-macro-post-swig文件"><a href="#打开…-themes-next-layout-macro-post-swig文件" class="headerlink" title="打开…/themes/next/layout/_macro/post.swig文件"></a>打开…/themes/next/layout/_macro/post.swig文件</h3><p>把里面的代码用下面的代码替换:<br><a href="https://pan.baidu.com/s/1W_mDJXS3gDs_iq1aQEZaaA" target="_blank" rel="noopener">点击下载</a>    </p>
 <h3 id="打开…-themes-next-languages-zh-Hans-yml文件"><a href="#打开…-themes-next-languages-zh-Hans-yml文件" class="headerlink" title="打开…/themes/next/languages/zh-Hans.yml文件"></a>打开…/themes/next/languages/zh-Hans.yml文件</h3><p>搜索<code>post</code>字段,添加一行<code>comments: 评论数</code>,注意其余的不要改   </p>
 <h3 id="设置某篇文章置顶"><a href="#设置某篇文章置顶" class="headerlink" title="设置某篇文章置顶"></a>设置某篇文章置顶</h3><p>前面的流程走完后,只需要在写文章的时候在文章前面加入top: true<br>或者top: 100(100只是个例子，数字越大越靠前),就能实现置顶效果了    </p>
 <hr>
@@ -582,10 +560,6 @@ npm install hexo-generator-index-pin-top --save
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
-            
-              <a href="/2019/01/02/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
             
           </div>
 
@@ -703,7 +677,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
