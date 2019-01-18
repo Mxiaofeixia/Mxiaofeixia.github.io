@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-08T11:28:32.438Z</updated>
+  <updated>2019-01-18T10:16:04.648Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Django</title>
+    <link href="http://yoursite.com/2019/01/18/Django/"/>
+    <id>http://yoursite.com/2019/01/18/Django/</id>
+    <published>2019-01-18T10:15:08.000Z</published>
+    <updated>2019-01-18T10:16:04.648Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>1.什么是Django</strong></p><p>  Django是一个开源框架,2005年发布,采用Python语言编写的</p><p>  早期主要是做新闻和内容管理的</p><p>  Django本身提供了非常强大的后台管理系统</p><p>  版本: 2.1.5</p><p>  使用: 1.11.8</p><p>  官网:<a href="http://www.djangoproject.com" target="_blank" rel="noopener">http://www.djangoproject.com</a></p><p>  中文文档:<a href="http://djangobook.py3k.cn/2.0/、" target="_blank" rel="noopener">http://djangobook.py3k.cn/2.0/、</a></p><a id="more"></a>  <p><strong>2.框架模式</strong> </p><p>  MTV</p><p>​    M ：Models</p><p>​    T ：Templates</p><p>​    V ：Views</p><p><strong>3.Django的安装</strong></p><p>  1.查看已安装的Django版本</p><p>​    1.进入到终端以及Python交互模式</p><p>​      交互模式：python3 / ipython3</p><p>​    2.交互模式中输入：import django</p><p>​      1.如果未报错:当前环境中已经安装django</p><p>​      2.如果报错:没有django</p><p>​    3.查看版本</p><p>​      交互模式中:django.VERSION</p><p>  2.安装Django</p><p>​    1.在线安装</p><p>​      pip3 : 安装到python3下</p><p>​      pip : 安装到python2下</p><p>​      sudo pip3 install django</p><p>​      (默认安装Django的最新版本)</p><p>​      sudo pip3 install django==1.11.8</p><p>​      (指定安装Django的1.11.8)</p><p>​    2.离线安装</p><p>​      1.下载安装包</p><p>​      2.sudo pip3 install Django-1.11.8.tar.gz</p><p><strong>4.Django框架的使用</strong></p><p>  1.创建Django项目</p><p>​    使用 django-admin 创建Django项目</p><p>​    语法: django-admin startproject 项目名(终端输入)</p><p>  2.Django项目的结构介绍</p><p>​    1.manage.py</p><p>​      包含执行django中的各项操作的指令(子命令)</p><p>​        如:</p><p>​          启动服务 : runserver (例：python3 manage.py runserver)</p><p>​          创建应用 :start</p><p>​          创建后台管理员 : </p><p>​          …. ….</p><p>​    2.主目录(与项目名称一致的目录)</p><p>​      1.<strong>init</strong>.py</p><p>​        初始化文件,服务启动时自动运行</p><p>​      2.urls.py</p><p>​        项目的基础url配置文件(基础的路由配置)</p><p>​      3.wsgi.py</p><p>​        Web Server Gateway Interface</p><p>​        Web 服务 网关 接口的配置文件</p><p>​        部署项目时使用</p><p>​      4.settings.py</p><p>​        项目的主配置文件,启动服务器时自动运行</p><p>​        1.BASE_DIR : 获取当前项目的绝对路径</p><p>​        2.DEBUG : 是否启用调试模式</p><p>​          True : 启动调试模式(开发环境中使用)</p><p>​          False : 不启用调试(生产环境中使用)</p><p>​        3.ALLOWED_HOSTS</p><p>​          设置允许访问到本项目的地址列表</p><p>​          ①如果为空的话,表示只有本机(127.0.0.1/localhost)才能访问    </p><p>​          ②[‘*’],表示任何能够表示该机器的地址都能够访问到当前项目</p><p>​            (127.0.0.1/localhost  /  0.0.0.0  /  IP地址都可以)</p><p>​         注意： 如果允许在局域网内被其他机器访问的话:</p><p>​            如果允许被其他机器访问的话,启动服务时必须使用以下方式:</p><p>​          ./manage.py runserver 0.0.0.0:端口号</p><p>​        4.INSTALLED_APPS</p><p>​          指定已安装的应用,如果有自定义应用的话,必须要在此注册</p><p>​        5.MIDDLEWARE</p><p>​          指定中间件信息</p><p>​        6.TEMPLATES</p><p>​          指定模板配置</p><p>​        7.DATABASES</p><p>​          指定数据库配置</p><p>​        8.LANGUAGE_CODE</p><p>​          语言设置,如果需要中文的话,允许更改为 zh-Hans</p><p>​        9.TIME_ZONE</p><p>​          指定时区,如果指定中国时区的话,允许更改为 “Asia/Shanghai”</p><p><strong>5.URL的使用</strong></p><p>  1.urls.py</p><p>​    主路由配置文件,默认在主目录中</p><p>​    包含最基本的地址映射</p><p>​    作用:通过urls.py中定义好的地址找到对应的视图处理函数</p><p>​    （在urlpatterns中，通过若干url()来表示具体的路由-视图映射关系）</p><p>​    from django.conf.urls import url</p><p>​    from django.contrib import admin</p><p>​    urlpatterns = [</p><p>​      url(r’^admin/‘,admin.site.urls),</p><p>​    ]</p><p>  2.url() 的语法规范</p><p>​    作用:匹配用户的访问路径,交给对应的视图处理程序</p><p>​    语法:</p><p>​      from django.conf.urls import url</p><p>​      url(regex,views,kwargs=None,name=None)</p><p>​        1.regex : 允许是正则表达式,匹配请求的url</p><p>​        2.views : 对应的视图处理函数名</p><p>​        3.kwargs : 字典,用来向views传参</p><p>​        4.name : 为 url 起别名,在地址反向解析时使用</p><p>  3.通过 url 向视图传参</p><p>​    <a href="http://localhost:8000/show/2018" target="_blank" rel="noopener">http://localhost:8000/show/2018</a></p><p>​    <a href="http://localhost:8000/show/2015" target="_blank" rel="noopener">http://localhost:8000/show/2015</a></p><p>​    <a href="http://lcoalhost:8000/show/2017" target="_blank" rel="noopener">http://lcoalhost:8000/show/2017</a></p><p>​    1.使用正则表达式传参</p><p>​      使用正则表达式的子组传参 - (),一个子组就是一个参数,多个参数的话要使用多个子组表示,并且中间使用 / 隔开</p><p>​      # 当访问路径时 /show/四位数字/ 的时候</p><p>​      在 urls.py 中</p><p>​      url(r’^show/(\d{4})/$’,show1_views),</p><p>​      在views.py中</p><p>​      def show1_views(request,year):</p><p>​        pass</p><p>​    2.通过 kwargs 参数传参</p><p>​      dic = {</p><p>​        ‘name’:’wangwc’,</p><p>​        ‘age’:18</p><p>​      }</p><p>​      url(r’^show/$’,show3_views,dic)</p><p>​      def show3_views(request,name,age):</p><p>​        pass</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;1.什么是Django&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;  Django是一个开源框架,2005年发布,采用Python语言编写的&lt;/p&gt;
+&lt;p&gt;  早期主要是做新闻和内容管理的&lt;/p&gt;
+&lt;p&gt;  Django本身提供了非常强大的后台管理系统&lt;/p&gt;
+&lt;p&gt;  版本: 2.1.5&lt;/p&gt;
+&lt;p&gt;  使用: 1.11.8&lt;/p&gt;
+&lt;p&gt;  官网:&lt;a href=&quot;http://www.djangoproject.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.djangoproject.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;  中文文档:&lt;a href=&quot;http://djangobook.py3k.cn/2.0/、&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://djangobook.py3k.cn/2.0/、&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Python Web" scheme="http://yoursite.com/categories/Python-Web/"/>
+    
+    
+      <category term="Django" scheme="http://yoursite.com/tags/Django/"/>
+    
+  </entry>
   
   <entry>
     <title>AJAX（python）框架</title>
