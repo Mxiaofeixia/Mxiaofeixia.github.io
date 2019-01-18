@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-18T10:19:06.916Z</updated>
+  <updated>2019-01-18T10:28:19.599Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/2019/01/18/Django%E4%B9%8B%E5%BA%94%E7%94%A8/"/>
     <id>http://yoursite.com/2019/01/18/Django之应用/</id>
     <published>2019-01-18T10:17:14.000Z</published>
-    <updated>2019-01-18T10:19:06.916Z</updated>
+    <updated>2019-01-18T10:28:19.599Z</updated>
     
-    <content type="html"><![CDATA[<p>  1.什么是应用</p><p>​    应用就是网站中的一个独立的程序模块</p><p>​    在Django中,主目录一般不处理用户的具体请求,主目录主要做项目的初始化配置以及请求的分发(分布式请求处理),具体的请求是由各个应用去处理的</p><p>  2.创建应用</p><p>​    1.manage.py 指令创建</p><p>​      ./manage.py startapp 应用名称</p><p>​      ex:</p><p>​        ./manage.py startapp news</p><p>​        注意：将manage.py中将第一行的python改为python</p><a id="more"></a> <p>​    2.在 settings.py 中进行注册</p><p>​      在 INSTALLED_APPS 中追加应用名称即可</p><p>​      INSTALLED_APPS = [</p><p>​        …. ….,</p><p>​        ‘应用名称’,</p><p>​      ]</p><p>  3.应用的结构组成</p><p>​    1.migrations 文件夹</p><p>​      存放数据库的中间文件</p><p>​      与模型相关</p><p>​    2.<strong>init</strong>.py</p><p>​      应用的初始化文件</p><p>​    3.admin.py</p><p>​      应用的后台管理配置文件</p><p>​    4.app.py</p><p>​      应用的属性配置文件</p><p>​    5.models.py</p><p>​      模型的映射文件</p><p>​    6.tests.py</p><p>​      应用的单元测试文件</p><p>​    7.views.py</p><p>​      定义视图处理函数的文件</p><p>  4.分布式的路由系统 (请求地址分发)</p><p>​    在每个应用中创建 urls.py 结构参考主目录的 urls.py</p><p>1.路由系统</p><p>​    改版</p><p>​    访问路径：localhost:8000/music/index</p><p>​         改版  ： localhost:8000/music</p><p>​        访问  index()视图处理函数</p><p>访问路径：localhost:8000/index/index</p><p>改版        ：localhost:8000/</p><p>访问         index应用中的index()视图函数</p><p>访问路径：localhost:8000/login</p><p>访问index应用中的login()视图函数</p><p>访问路径：localhost:8000/register</p><p>访问index应用中的register()视图函数</p>]]></content>
+    <content type="html"><![CDATA[<p>  1.什么是应用</p><p>​    应用就是网站中的一个独立的程序模块</p><p>​    在Django中,主目录一般不处理用户的具体请求,主目录主要做项目的初始化配置以及请求的分发(分布式请求处理),具体的请求是由各个应用去处理的</p><p>  2.创建应用</p><p>​    1.manage.py 指令创建</p><p>​      ./manage.py startapp 应用名称</p><p>​      ex:</p><p>​        ./manage.py startapp news</p><p>​       </p><a id="more"></a> <p>​    2.在 settings.py 中进行注册</p><p>​      在 INSTALLED_APPS 中追加应用名称即可</p><p>​      INSTALLED_APPS = [</p><p>​        …. ….,</p><p>​        ‘应用名称’,</p><p>​      ]</p><p>  3.应用的结构组成</p><p>​    1.migrations 文件夹</p><p>​      存放数据库的中间文件</p><p>​      与模型相关</p><p>​    2.<strong>init</strong>.py</p><p>​      应用的初始化文件</p><p>​    3.admin.py</p><p>​      应用的后台管理配置文件</p><p>​    4.app.py</p><p>​      应用的属性配置文件</p><p>​    5.models.py</p><p>​      模型的映射文件</p><p>​    6.tests.py</p><p>​      应用的单元测试文件</p><p>​    7.views.py</p><p>​      定义视图处理函数的文件</p><p>  4.分布式的路由系统 (请求地址分发)</p><p>​    在每个应用中创建 urls.py 结构参考主目录的 urls.py</p><p>1.路由系统</p><p>​    改版</p><p>​    访问路径：localhost:8000/music/index</p><p>​         改版  ： localhost:8000/music</p><p>​        访问  index()视图处理函数</p><p>访问路径：localhost:8000/index/index</p><p>改版        ：localhost:8000/</p><p>访问         index应用中的index()视图函数</p><p>访问路径：localhost:8000/login</p><p>访问index应用中的login()视图函数</p><p>访问路径：localhost:8000/register</p><p>访问index应用中的register()视图函数</p>]]></content>
     
     <summary type="html">
     
@@ -35,7 +35,7 @@
 &lt;p&gt;​      ./manage.py startapp 应用名称&lt;/p&gt;
 &lt;p&gt;​      ex:&lt;/p&gt;
 &lt;p&gt;​        ./manage.py startapp news&lt;/p&gt;
-&lt;p&gt;​        注意：将manage.py中将第一行的python改为python&lt;/p&gt;
+&lt;p&gt;​       &lt;/p&gt;
     
     </summary>
     
