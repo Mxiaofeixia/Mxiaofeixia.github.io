@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Flask,">
 
 
 
@@ -79,18 +79,20 @@
 
 
 
+<meta name="description" content="1.什么是Flask：Flask是一个基于Python并且依赖于jinja2模板引擎和werkzeug WSGI    服务的一个微型框架，Flask中包含一个轻量级的Web服务器主要用于在开发阶段测试使用 ​     Flask是基于MTV框架模式开发出来的框架 ​    WSGI：Web Server Gateway Interface（Web服务网关接口） ​    2.安装Flask ​">
+<meta name="keywords" content="Flask">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【持续更新】hexo next主题优化手册">
-<meta property="og:url" content="http://yoursite.com/2019/01/02/【持续更新】hexo-next主题优化手册/index.html">
+<meta property="og:title" content="Flask之路由、模板">
+<meta property="og:url" content="http://yoursite.com/2019/01/19/Flask之路由、模板/index.html">
 <meta property="og:site_name" content="木木的个人博客">
+<meta property="og:description" content="1.什么是Flask：Flask是一个基于Python并且依赖于jinja2模板引擎和werkzeug WSGI    服务的一个微型框架，Flask中包含一个轻量级的Web服务器主要用于在开发阶段测试使用 ​     Flask是基于MTV框架模式开发出来的框架 ​    WSGI：Web Server Gateway Interface（Web服务网关接口） ​    2.安装Flask ​">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://i.imgur.com/4O4llpT.png">
-<meta property="og:image" content="https://i.imgur.com/sIHtbOe.png">
-<meta property="og:image" content="https://i.imgur.com/Z0BCMhF.png">
-<meta property="og:updated_time" content="2019-01-07T00:50:27.087Z">
+<meta property="og:image" content="http://yoursite.com/2019/01/19/Flask之路由、模板/index_files/0.7152242655064067.png">
+<meta property="og:updated_time" content="2019-01-19T05:52:37.809Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【持续更新】hexo next主题优化手册">
-<meta name="twitter:image" content="https://i.imgur.com/4O4llpT.png">
+<meta name="twitter:title" content="Flask之路由、模板">
+<meta name="twitter:description" content="1.什么是Flask：Flask是一个基于Python并且依赖于jinja2模板引擎和werkzeug WSGI    服务的一个微型框架，Flask中包含一个轻量级的Web服务器主要用于在开发阶段测试使用 ​     Flask是基于MTV框架模式开发出来的框架 ​    WSGI：Web Server Gateway Interface（Web服务网关接口） ​    2.安装Flask ​">
+<meta name="twitter:image" content="http://yoursite.com/2019/01/19/Flask之路由、模板/index_files/0.7152242655064067.png">
 
 
 
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/01/02/【持续更新】hexo-next主题优化手册/">
+  <link rel="canonical" href="http://yoursite.com/2019/01/19/Flask之路由、模板/">
 
 
 
 
 
-  <title>【持续更新】hexo next主题优化手册 | 木木的个人博客</title>
+  <title>Flask之路由、模板 | 木木的个人博客</title>
   
 
 
@@ -311,7 +313,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/02/【持续更新】hexo-next主题优化手册/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/19/Flask之路由、模板/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="煽情小飞侠">
@@ -328,7 +330,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【持续更新】hexo next主题优化手册</h1>
+          <h1 class="post-title" itemprop="name headline">Flask之路由、模板</h1>
         
 
         <div class="post-meta">
@@ -340,8 +342,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-02T18:47:09+08:00">
-                2019-01-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-19T13:44:45+08:00">
+                2019-01-19
               </time>
             
 
@@ -351,6 +353,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python-Web/" itemprop="url" rel="index">
+                    <span itemprop="name">Python Web</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -359,8 +383,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/01/02/【持续更新】hexo-next主题优化手册/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/02/【持续更新】hexo-next主题优化手册/" itemprop="commentCount"></span>
+                <a href="/2019/01/19/Flask之路由、模板/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/19/Flask之路由、模板/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -382,7 +406,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  957
+                  1.3k
                 </span>
               
 
@@ -398,7 +422,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  5
                 </span>
               
             </div>
@@ -419,86 +443,227 @@
       
 
       
-        <p><img src="https://i.imgur.com/4O4llpT.png" alt=""> <a id="more"></a>           </p>
-<h2 id="hexo常见操作"><a href="#hexo常见操作" class="headerlink" title="hexo常见操作"></a>hexo常见操作</h2><p><code>hexo new &quot;postName&quot;</code> #新建文章<br><code>hexo new page &quot;pageName&quot;</code> #新建页面<br><code>hexo clean</code> #清除部署緩存<br><code>hexo n == hexo new</code> #新建文章<br><code>hexo g == hexo generate</code> #生成静态页面至public目录<br><code>hexo s == hexo server</code> #开启预览访问端口（默认端口4000，可在浏览器输入<code>localhost:4000</code>预览）<br><code>hexo d == hexo deploy</code> #将.deploy目录部署到GitHub<br><code>hexo g -d</code> #生成加部署<br><code>hexo g -s</code> #生成加预览    </p>
-<hr>
-<h1 id="next主题优化"><a href="#next主题优化" class="headerlink" title="next主题优化"></a>next主题优化</h1><h2 id="next风格选择"><a href="#next风格选择" class="headerlink" title="next风格选择"></a>next风格选择</h2><p>next有四种风格,在站点配置文件搜索字段<code>Scheme Settings</code>可以看到，  </p>
-<pre><code># Scheme Settings
-# ---------------------------------------------------------------
-# Schemes
-#scheme: Muse
-#scheme: Mist
-#scheme: Pisces
-scheme: Gemini
-</code></pre><p>我这里用的是四种：<code>Gemini</code>     </p>
-<h2 id="next菜单设置"><a href="#next菜单设置" class="headerlink" title="next菜单设置"></a>next菜单设置</h2><p>比如可以看到我的主页有<code>首页</code>、<code>留言</code>、<code>分类</code>、<code>归档</code>、<code>标签</code>等菜单，<br>在站点配置文件下搜索<code>menu:</code>,可以看到   </p>
-<pre><code>menu:
-  home: / || home
-  about: /about/ || user
-  message: /message/ || comment
-  tags: /tags/ || tags
-  categories: /categories/ || th
-  archives: /archives/ || archive
-  #schedule: /schedule/ || calendar
-  #sitemap: /sitemap.xml || sitemap
-  #commonweal: /404/ || heartbeat
-</code></pre><p><code>home</code>就是<code>首页</code>;<code>message</code>就是<code>留言</code>…一开始只有首页和归档,其余的需要我们手动创建，<br>在站点根目录下打开命令行,输入<code>hexo new page &quot;about&quot;</code><br>并在主题配置文件<code>menu:</code>字段处取消对about的注释<br>重新部署我们就可以看到主页有<code>关于</code>这个菜单了，其他的类似，<br>修改<code>D:\hexoblog\source\about\index.md</code>,就可以修改<code>关于</code>界面了<br><code>about: /about/ || user</code>中的<code>user</code>是指<code>关于</code>菜单附件的图标用的是<a href="https://fontawesome.com/icons?from=io" target="_blank" rel="noopener">图标库</a>里面名为<code>user</code>的图标   </p>
-<h2 id="添加萌妹子动图"><a href="#添加萌妹子动图" class="headerlink" title="添加萌妹子动图"></a>添加萌妹子动图</h2><h3 id="在根目录下打开命令行"><a href="#在根目录下打开命令行" class="headerlink" title="在根目录下打开命令行"></a>在根目录下打开命令行</h3><p>输入<code>npm install --save hexo-helper-live2d</code>   </p>
-<h3 id="修改站点配置文件-注意不是主题配置文件"><a href="#修改站点配置文件-注意不是主题配置文件" class="headerlink" title="修改站点配置文件(注意不是主题配置文件)"></a>修改站点配置文件(注意不是主题配置文件)</h3><p>在末尾加入:    </p>
-<pre><code>live2d:
-      enable: true
-      scriptFrom: local
-      model:
-</code></pre><p>​            scale: 1<br>​            hHeadPos: 0.5<br>​            vHeadPos: 0.618<br>          display:<br>​            superSample: 2<br>​            width: 150<br>​            height: 300<br>​            position: right<br>​            hOffset: 0<br>​            vOffset: -20<br>         mobile:<br>​            show: false<br>          react:<br>​            opacityDefault: 0.5<br>​            opacityOnHover: 0.</p>
-<h2 id="实现文章首页”分类于”、”阅读次数”等效果"><a href="#实现文章首页”分类于”、”阅读次数”等效果" class="headerlink" title="实现文章首页”分类于”、”阅读次数”等效果"></a>实现文章首页”分类于”、”阅读次数”等效果</h2><p>效果图如下:<br><img src="https://i.imgur.com/sIHtbOe.png" alt="">     </p>
-<h3 id="在根目录下打开命令行-1"><a href="#在根目录下打开命令行-1" class="headerlink" title="在根目录下打开命令行"></a>在根目录下打开命令行</h3><p>依次输入以下命令:<br>​<br>    npm install hexo-wordcount –save<br>    npm uninstall hexo-generator-index –save<br>    npm install hexo-generator-index-pin-top –save   </p>
-<h3 id="打开主题配置文件"><a href="#打开主题配置文件" class="headerlink" title="打开主题配置文件"></a>打开主题配置文件</h3><p>打开相关开关:<br>​<br>    post_wordcount:<br>        item_text: true<br>        wordcount: true<br>        min2read: true<br>        totalcount: true</p>
-<h3 id="打开…-themes-next-layout-macro-post-swig文件"><a href="#打开…-themes-next-layout-macro-post-swig文件" class="headerlink" title="打开…/themes/next/layout/_macro/post.swig文件"></a>打开…/themes/next/layout/_macro/post.swig文件</h3><p>把里面的代码用下面的代码替换:<br><a href="https://pan.baidu.com/s/1W_mDJXS3gDs_iq1aQEZaaA" target="_blank" rel="noopener">点击下载</a>    </p>
-<h3 id="打开…-themes-next-languages-zh-Hans-yml文件"><a href="#打开…-themes-next-languages-zh-Hans-yml文件" class="headerlink" title="打开…/themes/next/languages/zh-Hans.yml文件"></a>打开…/themes/next/languages/zh-Hans.yml文件</h3><p>搜索<code>post</code>字段,添加一行<code>comments: 评论数</code>,注意其余的不要改   </p>
-<h3 id="设置某篇文章置顶"><a href="#设置某篇文章置顶" class="headerlink" title="设置某篇文章置顶"></a>设置某篇文章置顶</h3><p>前面的流程走完后,只需要在写文章的时候在文章前面加入top: true<br>或者top: 100(100只是个例子，数字越大越靠前),就能实现置顶效果了    </p>
-<hr>
-<h1 id="常见错误"><a href="#常见错误" class="headerlink" title="常见错误"></a>常见错误</h1><h2 id="本地预览和同时发布到远程的浏览结果不一致"><a href="#本地预览和同时发布到远程的浏览结果不一致" class="headerlink" title="本地预览和同时发布到远程的浏览结果不一致"></a>本地预览和同时发布到远程的浏览结果不一致</h2><p>这是由缓存造成的,需要先<code>hexo clean</code>,再<code>hexo g -d</code>部署到远程    </p>
-<hr>
-<h1 id="markdown高级语法"><a href="#markdown高级语法" class="headerlink" title="markdown高级语法"></a>markdown高级语法</h1><h2 id="插入连续多行的代码块"><a href="#插入连续多行的代码块" class="headerlink" title="插入连续多行的代码块"></a>插入连续多行的代码块</h2><p>按一个tab键,然后贴代码，保证每一行代码前都要额外的tab键,同时最前面空一行。<br>比如,我前面插入的连续行代码的实现效果:<br><img src="https://i.imgur.com/Z0BCMhF.png" alt="">      </p>
-<h2 id="设置文字大小和颜色和居中效果"><a href="#设置文字大小和颜色和居中效果" class="headerlink" title="设置文字大小和颜色和居中效果"></a>设置文字大小和颜色和居中效果</h2><p>hello,world!    </p>
-<p><font color="#FF0000"> hello,world! </font>    </p>
-<p><font size="5"> hello,world! </font>     </p>
-<p><font size="5" color="#FF0000">hello,world! </font>    </p>
-<p><center>hello,world!</center><br>上面的效果需要在markdwon中的代码是这样的:   </p>
-<pre><code>hello,world!    
-&lt;font color=&quot;#FF0000&quot;&gt; hello,world! &lt;/font&gt;    
-&lt;font size=5&gt; hello,world! &lt;/font&gt;     
-&lt;font size=5 color=&quot;#FF0000&quot;&gt;hello,world! &lt;/font&gt;    
-&lt;center&gt;hello,world!&lt;/center&gt;    
-</code></pre><h2 id="插入表格"><a href="#插入表格" class="headerlink" title="插入表格"></a>插入表格</h2><p>效果图:   </p>
+        <p> 1.什么是Flask：Flask是一个基于Python并且依赖于jinja2模板引擎和werkzeug WSGI</p>
+<p>   服务的一个微型框架，Flask中包含一个轻量级的Web服务器主要用于在开发阶段测试使用</p>
+<p>​     Flask是基于MTV框架模式开发出来的框架</p>
+<p>​    WSGI：Web Server Gateway Interface（Web服务网关接口）</p>
+<p>​    2.安装Flask</p>
+<p>​        ①查看已安装的Flask及其版本：在python的 交互模式中</p>
+<p>​                   1.import flask  报错：没安装  没报错：已经安装了Flask，可以继续查看版本</p>
+<p>​                   2.flask.<strong>version</strong></p>
+<p>​         ②安装Flask</p>
+<p>​                   sudo pip3 install flask</p>
+<p>​                   pip3 download flask</p>
+<p>​          ③flask初始化</p>
+<p>​            见代码</p>
+<p>​          ④杀掉占用5000端口的进程</p>
+<p>​                1.netstat  -lptu</p>
+<p>​                  查看占用5000端口的进程ID</p>
+<p>​                2.sudo kill  -9进程ID</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">from flask import  Flask</span><br><span class="line"></span><br><span class="line">#将当前运行的主程序构建成Ｆlask应用，以便接收</span><br><span class="line">#用户（request）的请求并给出响应（reponse）</span><br><span class="line">app = Flask(__name__)</span><br><span class="line"></span><br><span class="line">#@app.route()定义Ｆlask中的路由，就是访问路径，&apos;/&apos;表示的是整个网站的跟路径</span><br><span class="line">#index()表示的是匹配上路由之后的处理程序－视图函数，</span><br><span class="line">#所有的视图必须要有一个return用于表示响应的内容</span><br><span class="line">@app.route(&apos;/&apos;)</span><br><span class="line">def index():</span><br><span class="line">    return &quot;This is my first flask demo&quot;</span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    #运行Flask应用（启动Flask服务，启动之后允许通过</span><br><span class="line">    #http://localhost:5000的方式来访问当前项目）</span><br><span class="line">    app.run(debug=True)    #app.run(debug=True,port=5001)  换端口可以解决占用问题</span><br></pre></td></tr></table></figure>
+<p>5.路由</p>
+<p>​         1.什么是路由：</p>
+<p>​           处理url和函数之间的关系的程序就是”路由”</p>
+<p>​    请求地址到视图处理函数的映射</p>
+<p>​         2.路由的体现：在Flask中，路由是通过@app.route（）装饰器来表示的</p>
+<p>​             ①路由的基本表示</p>
+<p>​                   #http：//127.0.0.1:5000/  </p>
+<p>​                   @app.route(“/”)</p>
+<p>​                   def index();    </p>
+<p>​                            return “xxx”</p>
+<p>​                   #http：//127.0.0.1:5000/adc/login  </p>
+<p>​                   @app.route(“/adc/login”)</p>
+<p>​                   def index();</p>
+<p>​                            return “xxx”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@app.route(&apos;/login&apos;)</span><br><span class="line">def login():</span><br><span class="line">    return &quot;欢迎来到登录页面&quot;</span><br><span class="line"></span><br><span class="line">@app.route(&apos;/register&apos;)</span><br><span class="line">def register():0</span><br><span class="line">    return &quot;欢迎来到注册页面&quot;</span><br></pre></td></tr></table></figure>
+<p>​            ②带参数的路由：路由中可以携带参数来表示要传递到视图中的数据</p>
+<p>​                 #http：//127.0.0.1:5000/show/laowang</p>
+<p>​                 #http：//127.0.0.1:5000/show/wangwc</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>1.基本带参路由</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>@app.route(‘/show/<name>’)</name></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>def show1(name):</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>​           #name:表示地址栏传递的数据</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>​     pass</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@app.route(&apos;/show/&lt;name&gt;&apos;)</span><br><span class="line">def show(name):</span><br><span class="line">    return &quot;传递进来的参数为:&quot;+name</span><br></pre></td></tr></table></figure>
+<p>​                   2.带多个参数的路由</p>
+<p>​                    多个参数使用  /  隔开，并继续使用 &lt;&gt; 来表示</p>
+<p>​                    @app.route(‘/show1/<name>/<age>‘)</age></name></p>
+<p>​                    def show(name,age)</p>
+<p>​                            pass</p>
+<p>​                    3.指定参数类型的路由：允许在声明路由时指定参数</p>
+<p>​                        类型避免了在程序中再转换</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>@app.route(‘/show/<name>/<a href="int:age" target="_blank" rel="noopener">int:age</a>’)</name></p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>def show1(name,age):</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>​           name:字符串</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>​           age：整数</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>pass</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>​       int：类型转换器，</p>
+<p>​      Flask中所支持的类型转换器：</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:left">左对齐标题</th>
-<th style="text-align:right">右对齐标题</th>
-<th style="text-align:center">居中对齐标题</th>
+<th>类型转换器</th>
+<th>作用</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">短文本</td>
-<td style="text-align:right">中等文本</td>
-<td style="text-align:center">稍微长一点的文本</td>
+<td>缺省</td>
+<td>字符串，不能有斜杠（/）</td>
 </tr>
 <tr>
-<td style="text-align:left">稍微长一点的文本</td>
-<td style="text-align:right">短文本</td>
-<td style="text-align:center">中等文本</td>
+<td>int</td>
+<td>整数</td>
+</tr>
+<tr>
+<td>float</td>
+<td>浮点型</td>
+</tr>
+<tr>
+<td>path</td>
+<td>字符串，可以存在斜杠（/）</td>
 </tr>
 </tbody>
 </table>
-<p>markdown代码如下：    </p>
-<pre><code>| 左对齐标题 | 右对齐标题 | 居中对齐标题 |
-| :------| ------: | :------: |
-| 短文本 | 中等文本 | 稍微长一点的文本 |
-| 稍微长一点的文本 | 短文本 | 中等文本 |
-</code></pre><hr>
-
+<p><img src="index_files/0.7152242655064067.png" alt="img"></p>
+<p>​        4.多url的路由匹配</p>
+<p>​            为多个URl访问地址匹配同一个视图函数</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>@app.route(‘/地址1’)</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>@app.route(‘/地址2’)</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>@app.route(‘/地址3’)</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>def show1():</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>pass</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>端口占用的问题解决方案</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>1 终端中netstat –lptu  查找占用5000端口的pid</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>Sudo kill -9 进程ID     将pid杀死</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>2 重新指定端口</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#定义多url的路由匹配</span><br><span class="line">@app.route(&apos;/&apos;)</span><br><span class="line">@app.route(&apos;/index&apos;)</span><br><span class="line">@app.route(&apos;/&lt;int:page&gt;&apos;)</span><br><span class="line">@app.route(&apos;/index/&lt;int:page&gt;&apos;)</span><br><span class="line">def index_views(page=None):</span><br><span class="line">    if page is None:</span><br><span class="line">        page = 1</span><br><span class="line">    # print(&quot;您当前看的页数为:&quot; , page)</span><br><span class="line">    return &quot;您当前看的页数为:%d&quot; % page</span><br></pre></td></tr></table></figure>
+<p>​    3.路由中设置HTTP请求方法</p>
+<p>​         Flask中默认只能接受get请求，无法接受post请求，</p>
+<p>​        在Flask中允许设定可以接收的请求方式，如果请求</p>
+<p>​        方式不匹配的话，会响应回405（method Not Allowed）</p>
+<p>​         @app.route（”/xxx”,methods=[‘POST’,’GET’]）</p>
+<p>​         def  xxx();</p>
+<p>​                   该函数既能接收post请求也能接收get请求</p>
+<p>​    4.URL的反向解析</p>
+<p>​         正向解析：程序自动解析，<a href="mailto:根据@app.route" target="_blank" rel="noopener">根据@app.route</a>（）中的访问路径，来匹配处理函数</p>
+<p>​         反向解析：通过视图处理函数的名称自动生成对应的访问路径</p>
+<p>​         在Flask中要实现反向解析:url_for(funname，args)</p>
+<p>​                   funName：要生成地址的函数名</p>
+<p>​                   args：该地址中需要的参数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">from flask import Flask, url_for</span><br><span class="line"></span><br><span class="line">app = Flask(__name__)</span><br><span class="line">#不带参数</span><br><span class="line">@app.route(&apos;/index&apos;)</span><br><span class="line">def index():</span><br><span class="line">    return &quot;&lt;h1&gt;这是首页&lt;/h1&gt;&quot;</span><br><span class="line"></span><br><span class="line">#通过复杂的访问地址+简单的方法方法名称+参数</span><br><span class="line">@app.route(&apos;/admin/login/user/tarena/form/url/show/&lt;name&gt;&apos;)</span><br><span class="line">def show(name):</span><br><span class="line">    return &quot;传递进来的参数为:&quot;+name</span><br><span class="line"></span><br><span class="line">@app.route(&apos;/url&apos;)</span><br><span class="line">def url():</span><br><span class="line">    #通过index函数名，反向生成对应的请求地址</span><br><span class="line">    # url_index = url_for(&apos;index&apos;)</span><br><span class="line">    # print(&apos;index函数所对应的访问地址为:&apos;+url_index)</span><br><span class="line">    # return &quot;&lt;a href=&apos;%s&apos;&gt;访问首页&lt;/a&gt;&quot; % url_index</span><br><span class="line"></span><br><span class="line">    #通过show函数名以及name参数反向生成访问地址</span><br><span class="line">    url_show=url_for(&apos;show&apos;,name=&apos;wangwc&apos;)</span><br><span class="line">    print(&apos;访问地址:&apos;+url_show)</span><br><span class="line">    return &quot;&lt;a href=&apos;%s&apos;&gt;访问show(&apos;wangwc&apos;)&lt;/a&gt;&quot; % url_show</span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    app.run(debug=True)</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -568,7 +733,7 @@ scheme: Gemini
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yoursite.com/2019/01/02/【持续更新】hexo-next主题优化手册/" title="【持续更新】hexo next主题优化手册">http://yoursite.com/2019/01/02/【持续更新】hexo-next主题优化手册/</a>
+    <a href="http://yoursite.com/2019/01/19/Flask之路由、模板/" title="Flask之路由、模板">http://yoursite.com/2019/01/19/Flask之路由、模板/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -581,6 +746,12 @@ scheme: Gemini
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Flask/" rel="tag"># Flask</a>
+          
+        </div>
+      
 
       
       
@@ -590,15 +761,15 @@ scheme: Gemini
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/01/18/Django之应用/" rel="next" title="Django之应用">
+                <i class="fa fa-chevron-left"></i> Django之应用
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/01/05/python基础/" rel="prev" title="python基础">
-                python基础 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -679,17 +850,8 @@ var jiathis_config={
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -774,22 +936,6 @@ var jiathis_config={
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo常见操作"><span class="nav-number">1.</span> <span class="nav-text">hexo常见操作</span></a></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#next主题优化"><span class="nav-number"></span> <span class="nav-text">next主题优化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#next风格选择"><span class="nav-number">1.</span> <span class="nav-text">next风格选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#next菜单设置"><span class="nav-number">2.</span> <span class="nav-text">next菜单设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加萌妹子动图"><span class="nav-number">3.</span> <span class="nav-text">添加萌妹子动图</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#在根目录下打开命令行"><span class="nav-number">3.1.</span> <span class="nav-text">在根目录下打开命令行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改站点配置文件-注意不是主题配置文件"><span class="nav-number">3.2.</span> <span class="nav-text">修改站点配置文件(注意不是主题配置文件)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现文章首页”分类于”、”阅读次数”等效果"><span class="nav-number">4.</span> <span class="nav-text">实现文章首页”分类于”、”阅读次数”等效果</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#在根目录下打开命令行-1"><span class="nav-number">4.1.</span> <span class="nav-text">在根目录下打开命令行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打开主题配置文件"><span class="nav-number">4.2.</span> <span class="nav-text">打开主题配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打开…-themes-next-layout-macro-post-swig文件"><span class="nav-number">4.3.</span> <span class="nav-text">打开…/themes/next/layout/_macro/post.swig文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打开…-themes-next-languages-zh-Hans-yml文件"><span class="nav-number">4.4.</span> <span class="nav-text">打开…/themes/next/languages/zh-Hans.yml文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置某篇文章置顶"><span class="nav-number">4.5.</span> <span class="nav-text">设置某篇文章置顶</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常见错误"><span class="nav-number"></span> <span class="nav-text">常见错误</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#本地预览和同时发布到远程的浏览结果不一致"><span class="nav-number">1.</span> <span class="nav-text">本地预览和同时发布到远程的浏览结果不一致</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#markdown高级语法"><span class="nav-number"></span> <span class="nav-text">markdown高级语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#插入连续多行的代码块"><span class="nav-number">1.</span> <span class="nav-text">插入连续多行的代码块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置文字大小和颜色和居中效果"><span class="nav-number">2.</span> <span class="nav-text">设置文字大小和颜色和居中效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入表格"><span class="nav-number">3.</span> <span class="nav-text">插入表格</span></a></li></ol></li></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
