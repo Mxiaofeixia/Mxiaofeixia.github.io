@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-02-09T08:30:09.740Z</updated>
+  <updated>2019-02-09T08:38:05.517Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python 元组</title>
+    <link href="http://yoursite.com/2019/02/09/python-%E5%85%83%E7%BB%84/"/>
+    <id>http://yoursite.com/2019/02/09/python-元组/</id>
+    <published>2019-02-09T08:36:19.000Z</published>
+    <updated>2019-02-09T08:38:05.517Z</updated>
+    
+    <content type="html"><![CDATA[<p>元组 tuple</p><p>  元组是不可变的序列，同list一样，元组可以存放任意类型的数据</p><p>表示方式:</p><p>  用小括号()括起来,单个元素括起来后加逗号(,) 区分单个对象还是元组</p><p>创建空元组的字面值:</p><p>  t = () # 空元组</p><a id="more"></a> <p>创建非空元组的字面值表示</p><p>  t = 200, # 含有一个元素的元组</p><p>  t = (20,) # 含有一个元素的元组</p><p>  t = (1, 2, 3)</p><p>  t = 100, 200, 300</p><p>type(x) 函数返回一个对象的类型</p><p>元组的错误示例:</p><p>  t = (20) # t绑定整数20</p><p>  x, y, z = 100, 200, 300 # 序列赋值,不是元组</p><p>  x, y, z = (100, 200, 300)</p><p>  x, y, z = [100, 200, 300]</p><p>  x, y, z = “ABC”</p><p>元组的构造函数</p><p>  tuple() 创建空元组 等同于()</p><p>  tuple(iterable) 用可迭代对象生成一个元组</p><p>示例:</p><p>  t = tuple() # 空元组</p><p>  t = tuple(range(1, 10, 3))</p><p>  t = tuple(“ABC”)</p><p>  t = tuple([1,2,3])</p><p>元组的运算：</p><p>  + += <em> </em>= </p><p>  &lt; &lt;= &gt; &gt;= == != </p><p>  in / not in </p><p>  索引／切片</p><p>示例:</p><p>   t = (1, ‘二’, ‘three’) + (4.5, True, None)</p><p>   t = (1,2,3) * 2</p><p>   t *= 3  </p><p>比较运算:</p><p>  规则等同于列表的比较规则</p><p>  (1, 3, 2) &gt; (1, 2, 3) # True</p><p>  (1, 2, 3) &gt; (1, 2) # True</p><p>  (1, ‘二’) &gt; (‘二’, 1) # TypeError</p><p>  (1, ‘二’) != (‘二’, 1) # True</p><p>in / not in 运算符</p><p>  同列表的in运算符相同，用于检查一个值是否存在元组中，如果存在返回True,否则返回False</p><p>  not in 与 in 返回值相反</p><p>  如:</p><p>​    2 in (1, 2, 3) # True</p><p>​    100 in (1, 2, 3) # False</p><p>​    “abc” not in (1,2,3) # True</p><p>索引和切片操作:</p><p>  用法等同于列表的索引和切片操作</p><p>  元组不支持索引和切片赋值操作</p><p>  如:</p><p>​    t = (1, 2, 3, 4)</p><p>​    print(t[2]) # 3</p><p>len(x) / max(x) / min(x)</p><p>sum(x) / any(x) / all(x)</p><p>序列的构造函数</p><p>  str([obj])</p><p>  list([iterable])</p><p>  tuple([iterable])</p><p>反转函数:</p><p>  reversed(iterable) 返回反向顺序的可迭代对象</p><p>  如:</p><p>​    for x in reversed(“ABC”):</p><p>​        print(x) # 打印 C B A</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;元组 tuple&lt;/p&gt;
+&lt;p&gt;  元组是不可变的序列，同list一样，元组可以存放任意类型的数据&lt;/p&gt;
+&lt;p&gt;表示方式:&lt;/p&gt;
+&lt;p&gt;  用小括号()括起来,单个元素括起来后加逗号(,) 区分单个对象还是元组&lt;/p&gt;
+&lt;p&gt;创建空元组的字面值:&lt;/p&gt;
+&lt;p&gt;  t = () # 空元组&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>python 字典</title>
