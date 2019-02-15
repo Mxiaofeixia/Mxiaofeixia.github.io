@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="Django,">
+  <meta name="keywords" content="python,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="1.什么是Django   Django是一个开源框架,2005年发布,采用Python语言编写的   早期主要是做新闻和内容管理的   Django本身提供了非常强大的后台管理系统   版本: 2.1.5   使用: 1.11.8   官网:http://www.djangoproject.com   中文文档:http://djangobook.py3k.cn/2.0/、">
-<meta name="keywords" content="Django">
+<meta name="description" content="异常(基础)  exception 什么是错误   错误是指由于逻辑或语法等导致一个程序无法正常执行的问题 什么是异常   异常是程序出错误时标识的一种状态   当异常发生时,程序不会再向下执行,而转去调用此函数的地方待处理此错误并恢复为正常状态">
+<meta name="keywords" content="python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Django">
-<meta property="og:url" content="http://yoursite.com/2019/01/18/Django/index.html">
+<meta property="og:title" content="python之异常">
+<meta property="og:url" content="http://yoursite.com/2019/02/15/python之异常/index.html">
 <meta property="og:site_name" content="木木的个人博客">
-<meta property="og:description" content="1.什么是Django   Django是一个开源框架,2005年发布,采用Python语言编写的   早期主要是做新闻和内容管理的   Django本身提供了非常强大的后台管理系统   版本: 2.1.5   使用: 1.11.8   官网:http://www.djangoproject.com   中文文档:http://djangobook.py3k.cn/2.0/、">
+<meta property="og:description" content="异常(基础)  exception 什么是错误   错误是指由于逻辑或语法等导致一个程序无法正常执行的问题 什么是异常   异常是程序出错误时标识的一种状态   当异常发生时,程序不会再向下执行,而转去调用此函数的地方待处理此错误并恢复为正常状态">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-18T10:16:06.000Z">
+<meta property="og:updated_time" content="2019-02-15T07:01:46.868Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Django">
-<meta name="twitter:description" content="1.什么是Django   Django是一个开源框架,2005年发布,采用Python语言编写的   早期主要是做新闻和内容管理的   Django本身提供了非常强大的后台管理系统   版本: 2.1.5   使用: 1.11.8   官网:http://www.djangoproject.com   中文文档:http://djangobook.py3k.cn/2.0/、">
+<meta name="twitter:title" content="python之异常">
+<meta name="twitter:description" content="异常(基础)  exception 什么是错误   错误是指由于逻辑或语法等导致一个程序无法正常执行的问题 什么是异常   异常是程序出错误时标识的一种状态   当异常发生时,程序不会再向下执行,而转去调用此函数的地方待处理此错误并恢复为正常状态">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/01/18/Django/">
+  <link rel="canonical" href="http://yoursite.com/2019/02/15/python之异常/">
 
 
 
 
 
-  <title>Django | 木木的个人博客</title>
+  <title>python之异常 | 木木的个人博客</title>
   
 
 
@@ -311,7 +311,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/18/Django/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/15/python之异常/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="煽情小飞侠">
@@ -328,7 +328,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Django</h1>
+          <h1 class="post-title" itemprop="name headline">python之异常</h1>
         
 
         <div class="post-meta">
@@ -340,8 +340,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-18T18:15:08+08:00">
-                2019-01-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-15T14:40:07+08:00">
+                2019-02-15
               </time>
             
 
@@ -363,8 +363,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python-Web/" itemprop="url" rel="index">
-                    <span itemprop="name">Python Web</span>
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
                   </a>
                 </span>
 
@@ -381,8 +381,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/01/18/Django/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/18/Django/" itemprop="commentCount"></span>
+                <a href="/2019/02/15/python之异常/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/15/python之异常/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -404,7 +404,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1k
+                  2.3k
                 </span>
               
 
@@ -420,7 +420,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  4
+                  9
                 </span>
               
             </div>
@@ -441,127 +441,128 @@
       
 
       
-        <p><strong>1.什么是Django</strong></p>
-<p>  Django是一个开源框架,2005年发布,采用Python语言编写的</p>
-<p>  早期主要是做新闻和内容管理的</p>
-<p>  Django本身提供了非常强大的后台管理系统</p>
-<p>  版本: 2.1.5</p>
-<p>  使用: 1.11.8</p>
-<p>  官网:<a href="http://www.djangoproject.com" target="_blank" rel="noopener">http://www.djangoproject.com</a></p>
-<p>  中文文档:<a href="http://djangobook.py3k.cn/2.0/、" target="_blank" rel="noopener">http://djangobook.py3k.cn/2.0/、</a></p>
-<a id="more"></a>  
-<p><strong>2.框架模式</strong> </p>
-<p>  MTV</p>
-<p>​    M ：Models</p>
-<p>​    T ：Templates</p>
-<p>​    V ：Views</p>
-<p><strong>3.Django的安装</strong></p>
-<p>  1.查看已安装的Django版本</p>
-<p>​    1.进入到终端以及Python交互模式</p>
-<p>​      交互模式：python3 / ipython3</p>
-<p>​    2.交互模式中输入：import django</p>
-<p>​      1.如果未报错:当前环境中已经安装django</p>
-<p>​      2.如果报错:没有django</p>
-<p>​    3.查看版本</p>
-<p>​      交互模式中:django.VERSION</p>
-<p>  2.安装Django</p>
-<p>​    1.在线安装</p>
-<p>​      pip3 : 安装到python3下</p>
-<p>​      pip : 安装到python2下</p>
-<p>​      sudo pip3 install django</p>
-<p>​      (默认安装Django的最新版本)</p>
-<p>​      sudo pip3 install django==1.11.8</p>
-<p>​      (指定安装Django的1.11.8)</p>
-<p>​    2.离线安装</p>
-<p>​      1.下载安装包</p>
-<p>​      2.sudo pip3 install Django-1.11.8.tar.gz</p>
-<p><strong>4.Django框架的使用</strong></p>
-<p>  1.创建Django项目</p>
-<p>​    使用 django-admin 创建Django项目</p>
-<p>​    语法: django-admin startproject 项目名(终端输入)</p>
-<p>  2.Django项目的结构介绍</p>
-<p>​    1.manage.py</p>
-<p>​      包含执行django中的各项操作的指令(子命令)</p>
-<p>​        如:</p>
-<p>​          启动服务 : runserver (例：python3 manage.py runserver)</p>
-<p>​          创建应用 :start</p>
-<p>​          创建后台管理员 : </p>
-<p>​          …. ….</p>
-<p>​    2.主目录(与项目名称一致的目录)</p>
-<p>​      1.<strong>init</strong>.py</p>
-<p>​        初始化文件,服务启动时自动运行</p>
-<p>​      2.urls.py</p>
-<p>​        项目的基础url配置文件(基础的路由配置)</p>
-<p>​      3.wsgi.py</p>
-<p>​        Web Server Gateway Interface</p>
-<p>​        Web 服务 网关 接口的配置文件</p>
-<p>​        部署项目时使用</p>
-<p>​      4.settings.py</p>
-<p>​        项目的主配置文件,启动服务器时自动运行</p>
-<p>​        1.BASE_DIR : 获取当前项目的绝对路径</p>
-<p>​        2.DEBUG : 是否启用调试模式</p>
-<p>​          True : 启动调试模式(开发环境中使用)</p>
-<p>​          False : 不启用调试(生产环境中使用)</p>
-<p>​        3.ALLOWED_HOSTS</p>
-<p>​          设置允许访问到本项目的地址列表</p>
-<p>​          ①如果为空的话,表示只有本机(127.0.0.1/localhost)才能访问    </p>
-<p>​          ②[‘*’],表示任何能够表示该机器的地址都能够访问到当前项目</p>
-<p>​            (127.0.0.1/localhost  /  0.0.0.0  /  IP地址都可以)</p>
-<p>​         注意： 如果允许在局域网内被其他机器访问的话:</p>
-<p>​            如果允许被其他机器访问的话,启动服务时必须使用以下方式:</p>
-<p>​          ./manage.py runserver 0.0.0.0:端口号</p>
-<p>​        4.INSTALLED_APPS</p>
-<p>​          指定已安装的应用,如果有自定义应用的话,必须要在此注册</p>
-<p>​        5.MIDDLEWARE</p>
-<p>​          指定中间件信息</p>
-<p>​        6.TEMPLATES</p>
-<p>​          指定模板配置</p>
-<p>​        7.DATABASES</p>
-<p>​          指定数据库配置</p>
-<p>​        8.LANGUAGE_CODE</p>
-<p>​          语言设置,如果需要中文的话,允许更改为 zh-Hans</p>
-<p>​        9.TIME_ZONE</p>
-<p>​          指定时区,如果指定中国时区的话,允许更改为 “Asia/Shanghai”</p>
-<p><strong>5.URL的使用</strong></p>
-<p>  1.urls.py</p>
-<p>​    主路由配置文件,默认在主目录中</p>
-<p>​    包含最基本的地址映射</p>
-<p>​    作用:通过urls.py中定义好的地址找到对应的视图处理函数</p>
-<p>​    （在urlpatterns中，通过若干url()来表示具体的路由-视图映射关系）</p>
-<p>​    from django.conf.urls import url</p>
-<p>​    from django.contrib import admin</p>
-<p>​    urlpatterns = [</p>
-<p>​      url(r’^admin/‘,admin.site.urls),</p>
-<p>​    ]</p>
-<p>  2.url() 的语法规范</p>
-<p>​    作用:匹配用户的访问路径,交给对应的视图处理程序</p>
+        <p>异常(基础)  exception</p>
+<p>什么是错误</p>
+<p>  错误是指由于逻辑或语法等导致一个程序无法正常执行的问题</p>
+<p>什么是异常</p>
+<p>  异常是程序出错误时标识的一种状态</p>
+<p>  当异常发生时,程序不会再向下执行,而转去调用此函数的地方待处理此错误并恢复为正常状态</p>
+<a id="more"></a> 
+<p> 作用:</p>
+<p>   用作信号,通知上层调用者有错误产生需要处理</p>
+<p>try语句:</p>
+<p>  两种语法:</p>
+<p>​    try-except 语句</p>
+<p>​    try-finally 语句</p>
+<p>try-except语句</p>
+<p>  语法:</p>
+<p>​    try:</p>
+<p>​        可能触发异常的语句</p>
+<p>​    except 错误类型1 [as 变量名1]:</p>
+<p>​        异常处理语句1</p>
+<p>​    except 错误类型2 [as 变量名2]:</p>
+<p>​        异常处理语句2</p>
+<p>​    except (错误类型3, 错误类型4)[as 变量3]:</p>
+<p>​        异常处理语句3</p>
+<p>​    except:</p>
+<p>​        异常处理语句other</p>
+<p>​    else:</p>
+<p>​        末发生异常语句</p>
+<p>​    finally:</p>
+<p>​        最终语句</p>
+<p>  作用:</p>
+<p>​    偿试捕获异常通知,将程序由异常流程转为正常流程并继续执行</p>
+<p>  说明:</p>
+<p>​    except 子句可以有一个或多个,但至少要有一个</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"># 此示例示意try-except 语句的基本语法和用法</span><br><span class="line"></span><br><span class="line">def div_apple(n):</span><br><span class="line">    print(&quot;有%d个苹果,您想分给几个人?&quot; % n)</span><br><span class="line">    s = input(&quot;请输入人数: &quot;)</span><br><span class="line">    count = int(s)  #可能触发ValueError错误</span><br><span class="line">    result = n / count #ZeroDivisionError</span><br><span class="line">    print(&quot;每个人分了%d个苹果&quot; % result)</span><br><span class="line"></span><br><span class="line">try:</span><br><span class="line">    div_apple(10)</span><br><span class="line">except ValueError:</span><br><span class="line">    print(&quot;分苹果时发生值错误异常,已捕获并转为正常状态&quot;)</span><br><span class="line">    print(&quot;把苹果拿回来&quot;)</span><br><span class="line">except ZeroDivisionError:</span><br><span class="line">    print(&quot;没有人来拿苹果,苹果被收回&quot;)</span><br><span class="line"></span><br><span class="line">print(&quot;程序正常结束&quot;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">def div_apple(n):</span><br><span class="line">    print(&quot;有%d个苹果,您想分给几个人?&quot; % n)</span><br><span class="line">    s = input(&quot;请输入人数: &quot;)</span><br><span class="line">    count = int(s)  #可能触发ValueError错误</span><br><span class="line">    result = n / count #ZeroDivisionError</span><br><span class="line">    print(&quot;每个人分了%d个苹果&quot; % result)</span><br><span class="line"></span><br><span class="line">try:</span><br><span class="line">    div_apple(10)</span><br><span class="line">except ValueError as err:</span><br><span class="line">    print(&quot;分苹果时发生值错误&quot;)</span><br><span class="line">    print(&quot;发生错误的原因是:&quot;, err)</span><br><span class="line">    print(&quot;把苹果拿回来&quot;)</span><br><span class="line">except ZeroDivisionError:</span><br><span class="line">    print(&quot;没有人来拿苹果,苹果被收回&quot;)</span><br><span class="line"></span><br><span class="line">print(&quot;程序正常结束&quot;)</span><br></pre></td></tr></table></figure>
+<p>练习:</p>
+<p>  写一个函数 get_score() 来获取学生输入的成绩(0 ~ 100) 的数,如果用户输入的不是0~100的整数则返回0,否则返回输入的整数</p>
+<p>  如:</p>
+<p>​    def get_score():</p>
+<p>​        …</p>
+<p>​    score = get_score()</p>
+<p>​    print(“您输入的成绩是:”, score)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># 方法1 在调用get_score时加入try语句</span><br><span class="line">def get_score():</span><br><span class="line">    s = int(input(&quot;请输入成绩(0~100): &quot;))</span><br><span class="line">    if not (0 &lt;= s &lt;= 100):</span><br><span class="line">        return 0</span><br><span class="line">    return s</span><br><span class="line"></span><br><span class="line">try:</span><br><span class="line">    score = get_score()</span><br><span class="line">except ValueError:</span><br><span class="line">    # 如果末获取到学生信息,则此时学生成绩为0</span><br><span class="line">    score = 0</span><br><span class="line">print(&quot;您输入的成绩是:&quot;, score)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># 方法2 在get_score函数内部加入try语句来进行错误处理</span><br><span class="line">def get_score():</span><br><span class="line">    try:</span><br><span class="line">        s = int(input(&quot;请输入成绩(0~100): &quot;))</span><br><span class="line">    except ValueError:</span><br><span class="line">        return 0</span><br><span class="line"></span><br><span class="line">    if not (0 &lt;= s &lt;= 100):</span><br><span class="line">        return 0</span><br><span class="line">    return s</span><br><span class="line"></span><br><span class="line">score = get_score()</span><br><span class="line">print(&quot;您输入的成绩是:&quot;, score)</span><br></pre></td></tr></table></figure>
+<p>try-finally 语句</p>
+<p>  语法:</p>
+<p>​    try:</p>
+<p>​        可能触发异常的语句</p>
+<p>​    finally:</p>
+<p>​        最终语句</p>
+<p>  说明:</p>
+<p>​    finally 子句不可以省略</p>
+<p>​    一定不在存在except 子句</p>
+<p>  作用:</p>
+<p>​    \1. 通常用try-finally 语句来做触发异常时必须要处理的事情,无论异常是否发生,finally子句都会被执行</p>
+<p>​    \2. try-finally 语句不会改变程序的(正常/异常)状态</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># 此示例示意,try-finally语句用法</span><br><span class="line"># 以煎蛋, 打开天燃气, 关闭天燃气</span><br><span class="line">def fry_egg():</span><br><span class="line">    print(&quot;打开天燃气...&quot;)</span><br><span class="line">    try:</span><br><span class="line">        count = int(input(&quot;请输入鸡蛋个数:&quot;))</span><br><span class="line">        print(&quot;完成煎蛋,共煎了%d个鸡蛋&quot; % count)</span><br><span class="line">    finally:</span><br><span class="line">        print(&quot;关闭天燃气&quot;)</span><br><span class="line"></span><br><span class="line">try:</span><br><span class="line">    fry_egg()</span><br><span class="line">except:</span><br><span class="line">    print(&quot;煎鸡蛋时发生异常, 已转为正常状态&quot;)</span><br></pre></td></tr></table></figure>
+<h5 id="raise-语句"><a href="#raise-语句" class="headerlink" title="raise 语句"></a>raise 语句</h5><p>  作用:</p>
+<p>​    触发一个错误,让程序进入异常状态</p>
+<p>​    发送错误通知给调用者</p>
+<p>  语法:</p>
+<p>​    raise 异常类型</p>
+<p>​    # 或</p>
+<p>​    raise 异常对象</p>
+<p>​    # 或</p>
+<p>​    raise  # 重新触发上一次异常</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"># 此示例示意raise 发送错误通知的用法</span><br><span class="line">def make_except():</span><br><span class="line">    print(&quot;函数开始&quot;)</span><br><span class="line"></span><br><span class="line">    # 发出ZeroDivisionError类型的错误给调用者</span><br><span class="line">    # raise ZeroDivisionError</span><br><span class="line">    # raise ValueError</span><br><span class="line">    e = ValueError(&quot;值错误&quot;)  #创建一个错误对象</span><br><span class="line">    raise e</span><br><span class="line"></span><br><span class="line">    print(&quot;函数结束&quot;)</span><br><span class="line"></span><br><span class="line">try:</span><br><span class="line">    make_except()</span><br><span class="line">except ZeroDivisionError:</span><br><span class="line">    print(&quot;接收到make_except发出的错误通知&quot;)</span><br><span class="line">except ValueError as err:</span><br><span class="line">    print(&quot;ValueError---&gt;&quot;, err)</span><br><span class="line"></span><br><span class="line">print(&quot;程序正常结束&quot;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"># 此示例示意raise 无参用法</span><br><span class="line"></span><br><span class="line">def fa():</span><br><span class="line">    print(&quot;---fa---开始&quot;)</span><br><span class="line">    raise ValueError(&quot;故意制造的一个错误!&quot;)</span><br><span class="line">    # int(&quot;aaaa&quot;)</span><br><span class="line">    print(&quot;---fa---结束&quot;)</span><br><span class="line"></span><br><span class="line">def fb():</span><br><span class="line">    print(&quot;fb开始&quot;)</span><br><span class="line">    try:</span><br><span class="line">        fa()</span><br><span class="line">    except ValueError as err:</span><br><span class="line">        print(&quot;fa里发生了值错误已处理&quot;)</span><br><span class="line">        # 此处如果要将err再次向上传递</span><br><span class="line">        raise</span><br><span class="line">    print(&quot;fb结束&quot;)</span><br><span class="line"></span><br><span class="line">try:</span><br><span class="line">    fb()</span><br><span class="line">except ValueError:</span><br><span class="line">    print(&quot;再一次收到fb内部发生的错误 &quot;)</span><br></pre></td></tr></table></figure>
+<p>练习:</p>
+<p>  写一个函数get_age() 用来获取一个人的年龄信息</p>
+<p>  此函数规定用户只能输入1~140之间的整数,如果用户输入的数是其它的数值,则直接触发ValueError类型的错误!</p>
+<p>  如 : </p>
+<p>​    def get_age():</p>
+<p>​        …</p>
+<p>​    </p>
+<p>​    try:</p>
+<p>​        age = get_age()</p>
+<p>​        print(“用户输入的年龄是”, age)</p>
+<p>​    except ValueError as err:</p>
+<p>​        print(“用户输入的不是1~140的数字,获取年龄失败”)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">def get_age():</span><br><span class="line">    try:</span><br><span class="line">        a = int(input(&quot;请输入年龄: &quot;))</span><br><span class="line">    except ValueError:</span><br><span class="line">        raise ValueError(&quot;用户输入的不是数字&quot;)</span><br><span class="line">    if a &lt; 1:</span><br><span class="line">        raise ValueError(&quot;用户输入的年龄太小&quot;)</span><br><span class="line">    if a &gt; 140:</span><br><span class="line">        raise ValueError(&quot;用户输入的年龄太大&quot;)</span><br><span class="line">    return a</span><br><span class="line">try:</span><br><span class="line">    age = get_age()</span><br><span class="line">    print(&quot;用户输入的年龄是&quot;, age)</span><br><span class="line">except ValueError as err:</span><br><span class="line">    print(&quot;用户输入的不是1~140的数字,获取年龄失败&quot;)</span><br><span class="line">    print(&quot;err=&quot;, err)</span><br></pre></td></tr></table></figure>
+<h5 id="assert-语句-断言语句"><a href="#assert-语句-断言语句" class="headerlink" title="assert 语句(断言语句)"></a>assert 语句(断言语句)</h5><p>  语法:</p>
+<p>​    assert 真值表达式, 错误数据(通常是字符串)</p>
+<p>  作用:</p>
+<p>​    当真值表达式为False时,用错误数据创建一个AssertionError类型的错误,并进入异常状态</p>
+<p>  等同于:</p>
+<p>​    if bool(真值表达式) == False:</p>
+<p>​        raise AssertionError(错误数据)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># 此示例示意assert 语句的用法:</span><br><span class="line">def get_score():</span><br><span class="line">    s = int(input(&quot;请输入学生成绩:(0~100): &quot;))</span><br><span class="line">    assert 0 &lt;= s &lt;= 100, &quot;成绩超出范围&quot;</span><br><span class="line">    # if bool(0 &lt;= s &lt;= 100) == False:</span><br><span class="line">    #     raise AssertionError(&quot;成绩超出范围&quot;)</span><br><span class="line">    return s</span><br><span class="line"></span><br><span class="line">try:</span><br><span class="line">    score = get_score()</span><br><span class="line">    print(&quot;学生的成绩为:&quot;, score)</span><br><span class="line">except AssertionError as err:</span><br><span class="line">    print(&quot;AssertionError类型的错误被触发,且已捕获&quot;)</span><br><span class="line">    print(&quot;err=&quot;, err)</span><br></pre></td></tr></table></figure>
+<p>小结:</p>
+<p>  异常处理相关的语句:</p>
+<p>​    try-except 语句:</p>
+<p>​      作用:</p>
+<p>​        捕获异常通知,将程序由异常状态转为正常状态</p>
+<p>​    try-finally  语句</p>
+<p>​      作用:</p>
+<p>​        执行必须要执行的语句</p>
+<p>​    raise 语句</p>
+<p>​      作用:</p>
+<p>​        触发异常(抛出异常),让程序进入异常流程</p>
+<p>​    assert 语句</p>
+<p>​      作用:</p>
+<p>​        根据条件来触发AssertionError类的异常并进入异常流程</p>
+<p>异常(高级)</p>
+<p>  with 语句</p>
 <p>​    语法:</p>
-<p>​      from django.conf.urls import url</p>
-<p>​      url(regex,views,kwargs=None,name=None)</p>
-<p>​        1.regex : 允许是正则表达式,匹配请求的url</p>
-<p>​        2.views : 对应的视图处理函数名</p>
-<p>​        3.kwargs : 字典,用来向views传参</p>
-<p>​        4.name : 为 url 起别名,在地址反向解析时使用</p>
-<p>  3.通过 url 向视图传参</p>
-<p>​    <a href="http://localhost:8000/show/2018" target="_blank" rel="noopener">http://localhost:8000/show/2018</a></p>
-<p>​    <a href="http://localhost:8000/show/2015" target="_blank" rel="noopener">http://localhost:8000/show/2015</a></p>
-<p>​    <a href="http://lcoalhost:8000/show/2017" target="_blank" rel="noopener">http://lcoalhost:8000/show/2017</a></p>
-<p>​    1.使用正则表达式传参</p>
-<p>​      使用正则表达式的子组传参 - (),一个子组就是一个参数,多个参数的话要使用多个子组表示,并且中间使用 / 隔开</p>
-<p>​      # 当访问路径时 /show/四位数字/ 的时候</p>
-<p>​      在 urls.py 中</p>
-<p>​      url(r’^show/(\d{4})/$’,show1_views),</p>
-<p>​      在views.py中</p>
-<p>​      def show1_views(request,year):</p>
-<p>​        pass</p>
-<p>​    2.通过 kwargs 参数传参</p>
-<p>​      dic = {</p>
-<p>​        ‘name’:’wangwc’,</p>
-<p>​        ‘age’:18</p>
-<p>​      }</p>
-<p>​      url(r’^show/$’,show3_views,dic)</p>
-<p>​      def show3_views(request,name,age):</p>
-<p>​        pass</p>
+<p>​      with 表达式1 [as 变量1], 表达式2 [as 变量2], …:</p>
+<p>​         语句块</p>
+<p>  作用:</p>
+<p>​    使用于对资源进行访问的场合,确保使用过程中不管是否发生异常都会执行必须的’清理’操作, 并释放资源</p>
+<p>​      如:文件打开后自动关闭,线程中锁的自动获取和释放等(线程后面会学)</p>
+<p>  说明:</p>
+<p>​    as 子句中的变量用于绑定表达式执行后生成的对象</p>
+<p>​    with语句并不会改变异常的状态</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># 第一种方式用try-finally保证文件一定能够正常关闭</span><br><span class="line">try:</span><br><span class="line">    f = open(&quot;../../day19/day19.txt&quot;)</span><br><span class="line">    try:</span><br><span class="line">        for l in f:</span><br><span class="line">            x = int(&apos;aaaa&apos;)  # 出现异常</span><br><span class="line">            print(l)</span><br><span class="line">    finally:</span><br><span class="line">        f.close()</span><br><span class="line">        print(&quot;文件已经关闭&quot;)</span><br><span class="line">except OSError:</span><br><span class="line">    print(&quot;打开文件失败&quot;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">with open(&quot;../../day19/day19.txt&quot;) as f:</span><br></pre></td></tr></table></figure>
+<p>  环境资源管理器</p>
+<p>​    1. 类内有 <strong>enter</strong>和 <strong>exit</strong>实例方法的类创建的对象被称为环境管理器</p>
+<p>​    2. 能够用with语句进行管理的对象必须是环境管理器</p>
+<p>​    3. <strong>enter</strong>方法将在进入with语句时被调用, 由as变量绑定返回的对象</p>
+<p>​    4. <strong>exit</strong>方法将在离开with语句时被自动调用,且可以通过参数来判断离开with语句时是否有异常发生</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"># 此示例示意自定义的对象加入__enter__ 和 __exit__ 方法,让A类的对象能够使用with使用语句</span><br><span class="line">class A:</span><br><span class="line">    &apos;&apos;&apos;此类的对象可以用于with语句进行管理&apos;&apos;&apos;</span><br><span class="line">    def __enter__(self):</span><br><span class="line">        print(&quot;此方法是在with语句内执行的&quot;)</span><br><span class="line">        return self  # self将 被 with 中的as 变量绑定</span><br><span class="line"></span><br><span class="line">    def __exit__(self, exc_type, exc_val, exc_tb):</span><br><span class="line">        &apos;&apos;&apos;exc_type 用来绑定错误类型,当没有异常发生时绑定None</span><br><span class="line">           exc_val 用来绑定错误对象,当没有发生异常时绑定None</span><br><span class="line">           exc_tb 用来绑定TraceBack对象,当没有异常时绑定None</span><br><span class="line">        &apos;&apos;&apos;</span><br><span class="line">        if exc_type is None:</span><br><span class="line">            print(&quot;您已离开with语句,离开时没有发生任何异常&quot;)</span><br><span class="line">        else:</span><br><span class="line">            print(&quot;您已离开with语句&quot;)</span><br><span class="line">            print(&quot;错误类型是:&quot;, exc_type)</span><br><span class="line">            print(&quot;错误对象是:&quot;, exc_val)</span><br><span class="line">            print(&apos;Traceback:&apos;, exc_tb)</span><br><span class="line"></span><br><span class="line">with A() as a:</span><br><span class="line">    print(&quot;这是with语句内部的输出&quot;)</span><br><span class="line">    int(input(&quot;请输入整数: &quot;))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">print(&quot;程序正常结束&quot;)</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -632,7 +633,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yoursite.com/2019/01/18/Django/" title="Django">http://yoursite.com/2019/01/18/Django/</a>
+    <a href="http://yoursite.com/2019/02/15/python之异常/" title="python之异常">http://yoursite.com/2019/02/15/python之异常/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -647,7 +648,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Django/" rel="tag"># Django</a>
+            <a href="/tags/python/" rel="tag"># python</a>
           
         </div>
       
@@ -660,8 +661,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/08/AJAX（python）框架/" rel="next" title="AJAX（python）框架">
-                <i class="fa fa-chevron-left"></i> AJAX（python）框架
+              <a href="/2019/02/09/python-语句（if-while-for）/" rel="next" title="python 语句（if,while,for）">
+                <i class="fa fa-chevron-left"></i> python 语句（if,while,for）
               </a>
             
           </div>
@@ -669,10 +670,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/01/18/Django之应用/" rel="prev" title="Django之应用">
-                Django之应用 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -753,8 +750,17 @@ var jiathis_config={
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -839,6 +845,22 @@ var jiathis_config={
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#raise-语句"><span class="nav-number">1.</span> <span class="nav-text">raise 语句</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#assert-语句-断言语句"><span class="nav-number">2.</span> <span class="nav-text">assert 语句(断言语句)</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
